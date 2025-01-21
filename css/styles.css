@@ -88,15 +88,13 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+
+/* ABOUT US */
+
 .about {
-    padding: 100px 0;
+    padding: 75px;
     text-align: center;
     background-color: #ede4d6;
-}
-
-.about h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
 .about p {
@@ -104,6 +102,57 @@ nav a:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto 20px auto;
+    width: 75%;
+}
+
+.about .team {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.about .team-member {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .team-member .team-member-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.about .team-member .team-member-box .team-member-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+/* CONTACT */
+
 
 .contact {
     padding: 100px 0;
@@ -122,22 +171,63 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+
+
+/* FOOTER */
+
 footer {
     background-color: #4c3c32;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px;
     position: sticky;
     bottom: 0;
     z-index: 1000;
+    font-size: 0.75em;
 }
 
-.social-media img {
+footer .social-media img {
     max-width: 35px;
     padding: 5px;
 }
 
-quick-link ul {
+footer .newsletter {
+    position: relative;
+    display: inline-block;
+}
+
+footer .newsletter input[type="email"] {
+    font-size: 1em;
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    padding: 7px; 
+    outline: none; 
+    transition: border-color 0.3s; 
+    padding-right: 100px; 
+}
+
+footer .newsletter .subscribe-button {
+    font-size: 1em;
+    padding: 5px 10px;
+    position: absolute;
+    right: 3px; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%; 
+    border: none;
+    background-color: #7e685b;
+    color: white;
+    border-radius: 8px; 
+    padding: 0 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .newsletter .subscribe-button:hover {
+    background-color: #5a4a3b;
+}
+
+footer quick-link ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -145,69 +235,13 @@ quick-link ul {
     padding-top: 15px;
 }
 
-quick-link a {
+footer quick-link a {
     text-decoration: none;
     color:  #ede4d6;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-quick-link a:hover {
+footer quick-link a:hover {
     color: #7e685b;
-}
-
-input[type="email"]{
-    border-radius: 10px; 
-    border: 1px solid #ccc;
-    padding: 7px; 
-    outline: none; 
-    transition: border-color 0.3s; 
-}
-
-.newsletter {
-    position: relative;
-    display: inline-block;
-}
-
-#email {
-    padding-right: 100px; 
-}
-
-.subscribe-button {
-    position: absolute;
-    right: 3px; /* Add some space from the right edge */
-    top: 50%;
-    transform: translateY(-50%); /* Center the button vertically */
-    height: 85%; /* Make the button slightly smaller */
-    border: none;
-    background-color: #7e685b;
-    color: white;
-    border-radius: 8px; 
-    padding: 0 10px; /* Adjust padding to fit the new height */
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.subscribe-button:hover {
-    background-color: #5a4a3b; /* Darker shade for hover effect */
-}
-
-footer {
-    font-size: 0.75em; /* Reduce font size to 75% */
-    padding: 10px; /* Adjust padding as needed */
-}
-
-footer .social-media img {
-    width: 24px; /* Adjust icon size as needed */
-    height: 24px;
-}
-
-footer .newsletter input[type="email"] {
-    font-size: 1em; /* Ensure input text is readable */
-    padding: 5px; /* Adjust padding as needed */
-}
-
-footer .newsletter .subscribe-button {
-    font-size: 1em; /* Ensure button text is readable */
-    padding: 5px 10px; /* Adjust padding as needed */
 }
