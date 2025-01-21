@@ -14,16 +14,20 @@ header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 70px;
 }
 
 nav ul {
@@ -122,5 +126,88 @@ footer {
     background-color: #4c3c32;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.social-media img {
+    max-width: 35px;
+    padding: 5px;
+}
+
+quick-link ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+quick-link a {
+    text-decoration: none;
+    color:  #ede4d6;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+quick-link a:hover {
+    color: #7e685b;
+}
+
+input[type="email"]{
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    padding: 7px; 
+    outline: none; 
+    transition: border-color 0.3s; 
+}
+
+.newsletter {
+    position: relative;
+    display: inline-block;
+}
+
+#email {
+    padding-right: 100px; 
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 3px; /* Add some space from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Center the button vertically */
+    height: 85%; /* Make the button slightly smaller */
+    border: none;
+    background-color: #7e685b;
+    color: white;
+    border-radius: 8px; 
+    padding: 0 10px; /* Adjust padding to fit the new height */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.subscribe-button:hover {
+    background-color: #5a4a3b; /* Darker shade for hover effect */
+}
+
+footer {
+    font-size: 0.75em; /* Reduce font size to 75% */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+footer .social-media img {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+}
+
+footer .newsletter input[type="email"] {
+    font-size: 1em; /* Ensure input text is readable */
+    padding: 5px; /* Adjust padding as needed */
+}
+
+footer .newsletter .subscribe-button {
+    font-size: 1em; /* Ensure button text is readable */
+    padding: 5px 10px; /* Adjust padding as needed */
 }
