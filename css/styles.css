@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -94,11 +93,11 @@ nav a:hover {
 
 .featured-products .product {
     text-align: center;
-    border: 1px solid #ccc; /* Add border */
+    border: 1px solid #ccc; 
     padding: 10px;
     border-radius: 10px;
-    background-color: #f9f9f9; /* Match the background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .featured-products .product img {
@@ -194,10 +193,9 @@ nav a:hover {
 
 
 .contact {
-    padding: 100px 0;
+    padding: 75px;
     text-align: center;
-    background-color: #4c3c32;
-    color: white;
+    background-color: #f9f9f9;
 }
 
 .contact h2 {
@@ -205,9 +203,75 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.contact p {
-    font-size: 18px;
+.contact-info {
     margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* Adjust gap as needed */
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4c3c32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #7e685b;
+}
+
+.map {
+    flex: 1;
+}
+
+.map h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
 }
 
 
