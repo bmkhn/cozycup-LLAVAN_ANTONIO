@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f2e0;
     color: #4c3c32;
+    
 }
 
 header {
@@ -49,23 +50,29 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 150px 0;
-    background-image: url('hero-bg.jpg');
+    padding: 100px 0;
+    background-image: url('../img/cafe-interior.jpg');
     background-size: cover;
     color: white;
+    min-height: 50vh;
 }
 
 .hero h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: 72px;
+    margin: 80px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 40px;
 }
 
 .cta-button {
+    margin: 50px;
     display: inline-block;
     padding: 10px 20px;
     background-color: #4c3c32;
@@ -77,6 +84,38 @@ nav a:hover {
 .cta-button:hover {
     background-color: #7e685b;
 }
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.featured-products .product {
+    text-align: center;
+    border: 1px solid #ccc; /* Add border */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Match the background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.featured-products .product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-products .product p {
+    font-size: 16px;
+    color: #4c3c32;
+    margin-bottom: 10px;
+}
+
+
+
 
 .menu {
     padding: 100px 0;
@@ -143,8 +182,8 @@ nav a:hover {
 }
 
 .about .team-member .team-member-box .team-member-img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -179,15 +218,15 @@ footer {
     background-color: #4c3c32;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     position: sticky;
     bottom: 0;
     z-index: 1000;
-    font-size: 0.75em;
+    font-size: 0.65em;
 }
 
 footer .social-media img {
-    max-width: 35px;
+    max-width: 28px;
     padding: 5px;
 }
 
