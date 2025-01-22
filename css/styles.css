@@ -114,16 +114,55 @@ nav a:hover {
 }
 
 
-
+/* MENU */
 
 .menu {
-    padding: 100px 0;
+    padding: 75px;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .menu h2 {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu-section {
+    flex: 1;
+    text-align: left; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin-bottom: 20px;
+}
+
+.menu-section h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.menu-section p {
+    margin: 5px 0;
 }
 
 
